@@ -391,6 +391,44 @@ header {
     fill: var(--hero-text);
 }
 
+/* ---------------------------Команда-------------------------------- */
+.clients-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.clients-item {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    flex-basis: calc((100% - 150px) / 6);
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+    border: 1px solid var(--accent-color);
+}
+
+.clients-item:hover .clients-logo,
+.clients-item:focus .clients-logo {
+    fill: var(--accent-color);
+}
+
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-logo {
+    fill: #AFB1B8;
+}
+
 /* ---------------------------Портфоліо------------------------------- */
 .filters {
     margin-bottom: 50px;
