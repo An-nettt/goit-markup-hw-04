@@ -90,7 +90,7 @@ header {
     font-family: 'Raleway', sans-serif;
 }
 
-/* Навігація по сайту */
+/* -----------------------Навігація по сайту------------------------ */
 .main-nav {
     display: flex;
     align-items: center;
@@ -151,21 +151,15 @@ header {
     text-decoration: none;
 }
 
-.contacts .link:hover,
-.contacts .link:focus {
-    color: var(--accent-color);
-}
-
 .contacts .link .icon {
     margin-right: 10px;
     fill: currentColor;
 }
 
-
-
-
-
-
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
+}
 
 /* --------------------------Кнопки------------------------------- */
 .button {
@@ -218,7 +212,7 @@ header {
 
 /* Стилі для Студія */
 /* ----------------------------Герой------------------------------- */
-.hero {--
+.hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-size: 1600px;
