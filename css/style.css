@@ -376,11 +376,12 @@ header {
     align-items: center;
     
     background-color:var(--prymary-bgc);
+    color: #AFB1B8;
     border-radius: 50%;
 }
 
 .team-item .soc-icon {
-    fill: #AFB1B8;
+    fill: currentColor;
 }
 
 .team-item .soc-link:hover,
@@ -393,7 +394,7 @@ header {
     fill: var(--hero-text);
 }
 
-/* ---------------------------Команда-------------------------------- */
+/* ------------------------Постійні клієнти----------------------------- */
 .clients-list {
     display: flex;
     justify-content: center;    
@@ -416,20 +417,21 @@ header {
     border: 1px solid var(--accent-color);
 }
 
-.clients-item:hover .clients-logo,
-.clients-item:focus .clients-logo {
-    fill: var(--accent-color);
-}
-
 .clients-link {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    color: #AFB1B8;
 }
 
 .clients-logo {
-    /* margin: 16px 32px; */
-    fill: #AFB1B8;
+    fill: currentColor;
+}
+
+.clients-item:hover .clients-logo,
+.clients-item:focus .clients-logo {
+    fill: var(--accent-color);
 }
 
 /* ---------------------------Портфоліо------------------------------- */
@@ -586,12 +588,13 @@ header {
     justify-content: center;
     align-items: center;
 
-    background-color: rgba(255, 255, 255, 0.1);;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--hero-text);
     border-radius: 50%;
 }
 
-.join-item .soc-icon {
-    fill: var(--hero-text);
+.join-item .soc-icon {    
+    fill: currentColor;
 }
 
 .join-item .soc-link:hover,
@@ -601,5 +604,5 @@ header {
 
 .join-item .soc-link:hover .soc-icon,
 .join-item .soc-link:focus .soc-icon {
-    fill: var(--hero-text);
+    fill: currentColor;
 }
