@@ -216,9 +216,11 @@ header {
 /* ----------------------------Герой------------------------------- */
 .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-    background-repeat: no-repeat;
-    background-size: 1600px;
-    background-position: center;    
+    background-repeat: no-repeat;    
+    background-position: center;
+    background-size: cover;
+    max-width: 1600px;
+    margin: 0 auto;
     text-align: center;  
     padding-top: 200px;
     padding-bottom: 200px;
@@ -273,7 +275,7 @@ header {
 }
 
 .features .icon-features {
-    width: 270px;
+    width: 100%;
     height: 120px;
     margin-bottom: 30px;
     display: inline-flex;
@@ -401,20 +403,11 @@ header {
 }
 
 .clients-item {
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    padding: 15px 31px;
-
     flex-basis: calc((100% - 150px) / 6);
 }
 
 .clients-item:not(:last-child) {
     margin-right: 30px;
-}
-
-.clients-item:hover,
-.clients-item:focus {
-    border: 1px solid var(--accent-color);
 }
 
 .clients-link {
@@ -423,14 +416,22 @@ header {
     align-items: center;
 
     color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    padding: 15px 31px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    border: 1px solid var(--accent-color);
 }
 
 .clients-logo {
     fill: currentColor;
 }
 
-.clients-item:hover .clients-logo,
-.clients-item:focus .clients-logo {
+.clients-link:hover .clients-logo,
+.clients-link:focus .clients-logo {
     fill: var(--accent-color);
 }
 
@@ -474,12 +475,12 @@ header {
 
 .projects .link {
     display: inline-block;
-    flex-basis: calc((100% - 90px) / 4);
 
     text-decoration: none;    
 }
 
-.projects .link:hover {
+.projects .link:hover,
+.projects .link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -516,6 +517,7 @@ header {
 
 .footer-list {
     display: flex;
+    align-items: baseline;
 }
 
 .logo-footer {
@@ -561,11 +563,10 @@ header {
 
 .join .title {
     margin-bottom: 20px;
-    margin-top: 12px;
-
+    
     font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
+    font-size: 14px;
+    line-height: 1.14;
     text-transform: uppercase;   
     color: var(--hero-text); 
 }
